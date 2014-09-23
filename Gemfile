@@ -11,6 +11,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+# Use haml
+gem 'haml'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -28,6 +31,7 @@ gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 
 group :development do
   gem 'jazz_hands'#, :git => 'https://github.com/xcskier56/jazz_hands.git'
+  gem 'haml-rails' # only in dev, because haml-rails adds the generators
 end
 
 # Use ActiveModel has_secure_password
