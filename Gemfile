@@ -20,6 +20,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'foundation-rails'
+gem 'simple_form'
 
 gem 'awesome_print', git: 'https://github.com/michaeldv/awesome_print'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
