@@ -28,6 +28,7 @@ gem 'simple_form'
 
 gem 'awesome_print', git: 'https://github.com/michaeldv/awesome_print'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
+gem 'devise'
 
 group :development do
   gem 'jazz_hands'#, :git => 'https://github.com/xcskier56/jazz_hands.git'
