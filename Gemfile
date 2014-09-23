@@ -33,6 +33,7 @@ group :development do
   gem 'jazz_hands'#, :git => 'https://github.com/xcskier56/jazz_hands.git'
   gem 'haml-rails' # only in dev, because haml-rails adds the generators
   gem 'quiet_assets'
+  gem 'rails_layout'
 end
 
 # Use ActiveModel has_secure_password
