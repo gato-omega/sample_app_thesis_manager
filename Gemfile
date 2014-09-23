@@ -21,6 +21,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+gem 'awesome_print', git: 'https://github.com/michaeldv/awesome_print'
+gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 
 group :development do
   gem 'jazz_hands'#, :git => 'https://github.com/xcskier56/jazz_hands.git'
