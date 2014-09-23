@@ -32,6 +32,7 @@ gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 group :development do
   gem 'jazz_hands'#, :git => 'https://github.com/xcskier56/jazz_hands.git'
   gem 'haml-rails' # only in dev, because haml-rails adds the generators
+  gem 'quiet_assets'
 end
 
 # Use ActiveModel has_secure_password
