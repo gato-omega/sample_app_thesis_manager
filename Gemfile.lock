@@ -71,7 +71,7 @@ GEM
     diffy (3.0.6)
     erubis (2.7.0)
     execjs (2.2.1)
-    foundation-rails (5.4.4.0)
+    foundation-rails (5.4.3.1)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
     grit (2.5.0)
@@ -197,7 +197,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print!
   coffee-rails (~> 4.0.0)
-  foundation-rails
+  foundation-rails (= 5.4.3.1)
   jazz_hands
   jbuilder (~> 2.0)
   jquery-rails
