@@ -1,0 +1,5 @@
+%li= link_to 'Projects', projects_path
+- if signed_in?
+  %li= link_to 'Logout', destroy_user_session_path, method: :delete
+- else
+  %li= link_to 'Sign in', new_user_session_path
