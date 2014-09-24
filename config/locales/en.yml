@@ -20,4 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  institution_name: "University of Cauca"
+  welcome_title: "%{institution_name}'s Project Repository"
+  welcome_intro: "This is the portal for the University of Cauca project repository, you will find all undergraduate projects listed here so you can use any resources for your own projects"

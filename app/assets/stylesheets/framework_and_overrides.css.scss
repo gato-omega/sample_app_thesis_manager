@@ -46,7 +46,7 @@ body{
 // to make views framework-neutral
 main {
   @include twelve-columns;
-  background-color: #eee;
+  // background-color: #eee;
   }
 section {
   @extend .row;

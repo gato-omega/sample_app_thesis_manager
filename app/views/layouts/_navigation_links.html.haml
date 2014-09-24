@@ -4,7 +4,7 @@
       .large-9.small-9.columns
         = text_field_tag :query, nil, placeholder: "Search for projects"
       .large-3.small-3.columns
-        %a.alert.button.expand{:href => "#"} Search
+        %a.alert.button.tiny.expand{:href => "#"} Search
 - if signed_in?
   %li= link_to current_user.try(:email), edit_user_registration_path
   %li= link_to 'Logout', destroy_user_session_path, method: :delete
