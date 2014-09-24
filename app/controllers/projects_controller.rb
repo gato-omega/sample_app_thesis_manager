@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
     query = params['query']
     page = params['page'] || 1
     raw_projects = query.present? ? Project.full_text_search(query) : Project.all
-    @projects = raw_projects.paginate(:page => page, :per_page => 20)
+    @projects = raw_projects.desc(:created_at).paginate(:page => page, :per_page => 20)
   end
 
   # GET /projects/1
