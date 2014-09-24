@@ -31,7 +31,6 @@ gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'devise'
 gem 'mongoid_search'
 gem 'will_paginate_mongoid'
-gem 'gravatar_image_tag'
 
 
 group :development do
@@ -43,6 +42,7 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'newrelic_rpm'
 end
 
 # Use ActiveModel has_secure_password
