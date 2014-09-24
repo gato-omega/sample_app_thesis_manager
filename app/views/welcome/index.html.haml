@@ -1,1 +1,19 @@
-
+%article.semitransparent
+  %h2
+    %a{:href => "#"}= t(:welcome_title, institution_name: t(:institution_name))
+  .row
+    .large-6.columns
+      %p= t(:welcome_intro)
+    .large-6.columns
+      %a.th{:href => "#"}
+        %img{:src => "https://lh3.googleusercontent.com/-6RJSlp3_2Nk/URQ_Y7sP9YI/AAAAAAAABg8/rZbW1-Z7oqI/s0/fiet.jpg"}
+  .row
+    .large-12.columns
+      %p= t(:search_invitation)
+    .large-12.columns.has-form
+      = form_tag(projects_path, method: :get) do
+        .row.collapse
+          .large-9.small-9.columns
+            = text_field_tag :query, nil, placeholder: "Search for projects"
+          .large-3.small-3.columns
+            %a.alert.button.tiny.expand{:href => "#"} Search
