@@ -17,4 +17,8 @@
 //= require_tree .
 $(function() {
   $(document).foundation();
+  $('a.button').click(function(event){
+    $(this).closest('form').submit();
+  });
+
 });
