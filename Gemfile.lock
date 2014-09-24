@@ -78,6 +78,7 @@ GEM
     diffy (3.0.6)
     erubis (2.7.0)
     execjs (2.2.1)
+    fast-stemmer (1.0.2)
     foundation-rails (5.4.3.1)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
@@ -119,6 +120,9 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (5.4.1)
+    mongoid_search (0.3.2)
+      fast-stemmer (~> 1.0.0)
+      mongoid (>= 3.0.0)
     moped (2.0.0)
       bson (~> 2.2)
       connection_pool (~> 2.0)
@@ -225,6 +229,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mongoid!
+  mongoid_search
   quiet_assets
   rails (= 4.1.6)
   rails_layout

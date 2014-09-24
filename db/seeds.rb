@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
+
+puts 'creating seed projects'
+
+CSV.foreach(File.join(Rails.root, 'public', 'res', 'seed.csv'), headers: true) do |project|
+  Project.create(name: project['Name'], description: project['Description'])
+end
+
+puts 'creation process has been finished'
