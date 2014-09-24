@@ -5,7 +5,9 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   def index
     query = params['query']
-    @projects = query.present? ? Project.full_text_search(query) : Project.all
+    page = params['page'] || 1
+    raw_projects = query.present? ? Project.full_text_search(query) : Project.all
+    @projects = raw_projects.paginate(:page => page, :per_page => 20)
   end
 
   # GET /projects/1
