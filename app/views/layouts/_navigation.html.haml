@@ -3,10 +3,12 @@
 %nav.top-bar{"data-topbar" => true}
   %ul.title-area
     %li.name
-      = link_to 'Universidad del Cauca', root_path
+      %h1= link_to 'Universidad del Cauca', root_path, class: ''
     %li.toggle-topbar.menu-icon
       %a{:href => "#"}
         Menu
   .top-bar-section
-    %ul
+    %ul.left
+      %li= link_to 'Projects', projects_path
+    %ul.right
       = render 'layouts/navigation_links'

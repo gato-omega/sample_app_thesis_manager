@@ -1,4 +1,9 @@
-%li= link_to 'Projects', projects_path
+%li.has-form
+  .row.collapse
+    .large-9.small-9.columns
+      %input{:placeholder => "Find Stuff", :type => "text", size: 30}/
+    .large-3.small-3.columns
+      %a.alert.button.expand{:href => "#"} Search
 - if signed_in?
   %li= link_to current_user.try(:email), edit_user_registration_path
   %li= link_to 'Logout', destroy_user_session_path, method: :delete
