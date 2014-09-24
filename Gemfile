@@ -31,6 +31,7 @@ gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'devise'
 gem 'mongoid_search'
 gem 'will_paginate_mongoid'
+gem 'gravatar_image_tag'
 
 
 group :development do

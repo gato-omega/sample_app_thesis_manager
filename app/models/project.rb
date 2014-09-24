@@ -7,4 +7,6 @@ class Project
 
   search_in :name, :description
 
+  belongs_to :user
+
 end

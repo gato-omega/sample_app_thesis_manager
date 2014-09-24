@@ -2,20 +2,21 @@
 
 %table
   %tr
+    %th Author
     %th Name
     %th Description
-    %th
-    %th
-    %th
+    %th Actions
 
   - @projects.each do |project|
+    - email = project.user.email
     %tr
+      %td= gravatar_image_tag(email, :alt => email)
       %td= project.name
       %td= project.description
       %td= link_to 'Show', project
       %td= link_to 'Edit', edit_project_path(project)
       %td= link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' }
-      
+
 %br
 = will_paginate @projects, class: 'flickr_pagination'
 %br

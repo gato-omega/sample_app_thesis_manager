@@ -7,10 +7,20 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'csv'
 
+puts 'creating users'
+
+users = []
+common_password = '123456'
+
+['johan.tique@codescrum.com', 'miguel.diaz@codescrum.com', 'jairo.diaz@codescrum.com', 'jp.amaya@codescrum.com', 'diego.gomez@codescrum.com'].each do |email|
+  users << User.create(email: email, password: common_password, password_confirmation: common_password)
+end
+
 puts 'creating seed projects'
 
 CSV.foreach(File.join(Rails.root, 'public', 'res', 'seed.csv'), headers: true) do |project|
-  Project.create(name: project['Name'], description: project['Description'])
+  user = users.sample
+  user.projects.create(name: project['Name'], description: project['Description'])
 end
 
-puts 'creation process has been finished'
+puts 'seeding process has been finished'
