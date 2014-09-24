@@ -4,7 +4,8 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all
+    query = params['query']
+    @projects = query.present? ? Project.full_text_search(query) : Project.all
   end
 
   # GET /projects/1
@@ -59,10 +60,6 @@ class ProjectsController < ApplicationController
       format.html { redirect_to projects_url, notice: 'Project was successfully destroyed.' }
       format.json { head :no_content }
     end
-  end
-
-  def search
-    
   end
 
   private

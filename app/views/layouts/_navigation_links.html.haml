@@ -1,5 +1,5 @@
 %li.has-form
-  = form_tag(root_path, method: :get) do
+  = form_tag(projects_path, method: :get) do
     .row.collapse
       .large-9.small-9.columns
         = text_field_tag :query, nil, placeholder: "Search for projects"
