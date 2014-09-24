@@ -23,4 +23,4 @@ CSV.foreach(File.join(Rails.root, 'public', 'res', 'seed.csv'), headers: true) d
   user.projects.create(name: project['Name'], description: project['Description'])
 end
 
-puts 'seeding process has been finished'
+puts 'seeding process has been finished.'
