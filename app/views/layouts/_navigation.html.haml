@@ -10,5 +10,6 @@
   .top-bar-section
     %ul.left
       %li= link_to 'Projects', projects_path
+      %li= link_to 'Submit a New Project', new_project_path if signed_in?
     %ul.right
       = render 'layouts/navigation_links'
